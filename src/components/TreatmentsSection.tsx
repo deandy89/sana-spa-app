@@ -3,7 +3,20 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Clock, Sparkles, ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
+import { Clock, Sparkles, ArrowRight, CheckCircle2 } from "lucide-react";
+
+export interface DurationPricing {
+  label: string;
+  duration: string;
+  price: string;
+  idr: string;
+}
+
+export const DURATION_PRICING: DurationPricing[] = [
+  { label: "1 Jam", duration: "60 Menit", price: "Rp 250.000", idr: "250K" },
+  { label: "90 Menit", duration: "90 Menit", price: "Rp 350.000", idr: "350K" },
+  { label: "2 Jam", duration: "120 Menit", price: "Rp 450.000", idr: "450K" },
+];
 
 export interface Treatment {
   id: string;
@@ -23,8 +36,12 @@ export const TREATMENTS: Treatment[] = [
     subtitle: "Traditional Island Healing & Mindful Restoration",
     description:
       "A deeply restorative ritual uniting traditional Balinese long flowing strokes, gentle skin-rolling, acupressure points, and soothing palm pressure. Performed using warm, 100% organic cold-pressed virgin coconut oil infused with natural Balinese frangipani and herbal essences to release accumulated muscular tension, soothe the nervous system, and awaken your body's natural harmony.",
-    durations: ["60 Minutes", "90 Minutes", "120 Minutes"],
-    price: "From IDR 450K (~$30)",
+    durations: [
+      "1 Jam (60 Menit) — Rp 250.000",
+      "90 Menit — Rp 350.000",
+      "2 Jam (120 Menit) — Rp 450.000",
+    ],
+    price: "Rp 250K — 450K",
     image:
       "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop",
     popular: true,
@@ -115,8 +132,35 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                   {item.description}
                 </p>
 
+                {/* Duration & Transparent Pricing Cards */}
+                <div className="pt-2">
+                  <span className="text-[10px] sm:text-xs font-sans tracking-widest uppercase text-[#756A63] block mb-2.5 font-medium">
+                    Pilihan Durasi &amp; Tarif Layanan:
+                  </span>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {DURATION_PRICING.map((p) => (
+                      <div
+                        key={p.duration}
+                        className="flex items-center justify-between sm:flex-col sm:justify-center p-3.5 rounded-2xl bg-[#EBE3D5]/40 border border-[#DDD0BD] text-left sm:text-center shadow-sm"
+                      >
+                        <div>
+                          <span className="text-xs font-semibold text-[#231B15] block">
+                            {p.label}
+                          </span>
+                          <span className="text-[10px] text-[#756A63] font-light">
+                            ({p.duration})
+                          </span>
+                        </div>
+                        <span className="font-serif text-base sm:text-lg font-medium text-[#8B5A3C] sm:mt-1.5">
+                          {p.price}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Feature Highlights */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-[#EBE3D5]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 border-t border-[#EBE3D5]">
                   <div className="flex items-center space-x-2.5 text-xs text-[#3E2E26]">
                     <CheckCircle2 className="w-4 h-4 text-[#8B5A3C] shrink-0" />
                     <span>Warm Organic Coconut &amp; Frangipani Essential Oil</span>
@@ -132,24 +176,6 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                   <div className="flex items-center space-x-2.5 text-xs text-[#3E2E26]">
                     <CheckCircle2 className="w-4 h-4 text-[#8B5A3C] shrink-0" />
                     <span>Mindful Calming Soundscape &amp; Aromatherapy Ambiance</span>
-                  </div>
-                </div>
-
-                {/* Duration options */}
-                <div className="pt-2">
-                  <span className="text-[10px] sm:text-xs font-sans tracking-widest uppercase text-[#756A63] block mb-2 font-medium">
-                    Available Durations:
-                  </span>
-                  <div className="flex flex-wrap gap-2.5">
-                    {item.durations.map((dur) => (
-                      <span
-                        key={dur}
-                        className="inline-flex items-center space-x-1.5 text-xs text-[#3E2E26] bg-[#EBE3D5]/60 px-3.5 py-1.5 rounded-full border border-[#DDD0BD] font-light"
-                      >
-                        <Clock className="w-3.5 h-3.5 text-[#8B5A3C]" />
-                        <span>{dur}</span>
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>
