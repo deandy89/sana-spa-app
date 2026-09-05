@@ -73,12 +73,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Instagram
                   </h4>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/sanaspahomeservice/"
                     target="_blank"
                     rel="noreferrer"
                     className="font-serif text-base sm:text-lg text-[#FAF8F5] hover:text-[#CDBAA1] transition-colors"
                   >
-                    @sanabalispa
+                    @sanaspahomeservice
                   </a>
                   <p className="text-[10px] sm:text-[11px] text-[#DDD0BD]/60 mt-0.5">
                     Rituals &amp; Island Life
