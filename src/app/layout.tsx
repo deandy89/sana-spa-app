@@ -17,15 +17,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sana Bali Spa — Holistic Healing & Private Massage Therapy",
+  title: "Sana Bali Spa — Luxury In-Villa & On-Call Massage Therapy Bali",
   description:
-    "Luxury private massage therapist and holistic wellness based in Bali. Commissioned at Tribe Hotel Bali. Bespoke in-villa and sanctuary treatments.",
+    "Luxury private on-call massage therapist and holistic wellness across Bali. We travel directly to your villa, resort, or residence anywhere in Bali with complete spa equipment.",
   keywords: [
     "Sana Bali Spa",
     "Massage Therapist Bali",
-    "Private Spa Bali",
     "In-villa Massage Bali",
-    "Tribe Hotel Bali Spa",
+    "On-call Spa Bali",
+    "Mobile Spa Bali Island Wide",
+    "Bali Villa Massage Service",
     "Holistic Wellness Bali",
   ],
 };

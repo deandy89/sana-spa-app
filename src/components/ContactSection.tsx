@@ -34,9 +34,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 Let Calm Wash Over You
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-[#DDD0BD]/80 font-light leading-relaxed max-w-xl">
-                Whether you wish to arrange a same-day restorative session at your
-                villa or schedule recurring treatments throughout your Bali stay,
-                I am here to assist your wellness journey.
+                We bring an authentic, restorative spa sanctuary directly to your
+                doorstep anywhere on the island of Bali. Whether you are staying in
+                a secluded villa or a luxury resort, we travel to you.
               </p>
             </div>
 
@@ -51,15 +51,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     WhatsApp Direct
                   </h4>
                   <a
-                    href="https://wa.me/6281239887766?text=Hello%20Sana%20Bali%20Spa,%20I%20would%20like%20to%20inquire%20about%20a%20private%20treatment."
+                    href="https://wa.me/6283876667303?text=Hello%20Sana%20Bali%20Spa,%20I%20would%20like%20to%20inquire%20about%20a%20private%20in-villa%20treatment."
                     target="_blank"
                     rel="noreferrer"
                     className="font-serif text-base sm:text-lg text-[#FAF8F5] hover:text-[#CDBAA1] transition-colors"
                   >
-                    +62 812 3988 7766
+                    +62 838 7666 7303
                   </a>
                   <p className="text-[10px] sm:text-[11px] text-[#DDD0BD]/60 mt-0.5">
-                    Instant reply &amp; booking
+                    Instant reply &amp; booking (0838-7666-7303)
                   </p>
                 </div>
               </div>
@@ -95,10 +95,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Service Areas
                   </h4>
                   <p className="font-serif text-base sm:text-lg text-[#FAF8F5]">
-                    All Premier Bali Locations
+                    Island-Wide Across Bali
                   </p>
                   <p className="text-[10px] sm:text-[11px] text-[#DDD0BD]/60 mt-0.5">
-                    Seminyak, Canggu, Ubud, Uluwatu
+                    Canggu, Seminyak, Ubud, Uluwatu, Sanur &amp; Beyond
                   </p>
                 </div>
               </div>
@@ -132,14 +132,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           >
             <div className="space-y-2 sm:space-y-3">
               <span className="text-[9px] sm:text-[10px] tracking-[0.25em] uppercase font-light text-[#CDBAA1]">
-                Commissioned at Tribe Hotel Bali
+                Island-Wide In-Villa Spa Service
               </span>
               <h3 className="font-serif text-xl sm:text-2xl md:text-3xl font-light text-[#FAF8F5]">
                 Ready for Pure Stillness?
               </h3>
               <p className="text-xs sm:text-sm text-[#DDD0BD]/80 font-light leading-relaxed">
-                Click below to open our interactive booking assistant. Select your
-                ideal treatment and confirm via WhatsApp in seconds.
+                We travel directly to your villa anywhere in Bali. Click below to
+                select your treatment and confirm your booking via WhatsApp instantly.
               </p>
             </div>
 
@@ -147,7 +147,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               onClick={onOpenReserve}
               className="w-full bg-[#8B5A3C] hover:bg-[#A57352] text-white py-3.5 sm:py-4 rounded-full text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] font-medium transition-all duration-300 shadow-xl hover:scale-[1.02] active:scale-[0.98]"
             >
-              Reserve Private Session
+              Reserve In-Villa Session
             </button>
           </motion.div>
         </div>

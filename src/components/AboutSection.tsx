@@ -68,11 +68,11 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <p className="text-xs sm:text-sm md:text-base text-[#756A63] font-light leading-relaxed">
-              Commissioned regularly at premier luxury accommodations such as
-              <strong> Tribe Hotel Bali</strong>, I deliver an unhurried, deeply
-              customized sanctuary experience directly to your private villa or suite.
-              Every movement, breath, and botanical application is attuned to your
-              nervous system.
+              Offering complete on-demand private spa services across all areas of Bali, I travel
+              directly to your private villa, resort, or residence wherever you are staying on
+              the island. Equipped with a professional ergonomic massage table, crisp luxury linens,
+              and artisan botanical blends, I bring an authentic, unhurried wellness sanctuary
+              right to your doorstep.
             </p>
 
             {/* Highlights checklist */}

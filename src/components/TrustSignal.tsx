@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Award } from "lucide-react";
+import { MapPin, Sparkles } from "lucide-react";
 
 export const TrustSignal: React.FC = () => {
   return (
@@ -17,29 +17,33 @@ export const TrustSignal: React.FC = () => {
         >
           {/* Subtle icon & badge */}
           <div className="flex items-center space-x-2 text-[#8B5A3C]">
-            <Award className="w-4 h-4 stroke-[1.5]" />
+            <MapPin className="w-4 h-4 stroke-[1.5]" />
             <span className="text-[10px] sm:text-[11px] tracking-[0.25em] sm:tracking-[0.3em] uppercase font-medium text-[#756A63]">
-              Excellence &amp; Credentials
+              Island-Wide In-Villa Spa Service &bull; Bali
             </span>
           </div>
 
-          {/* Mandatory Trust Signal Statement */}
-          <h2 className="font-serif text-lg sm:text-2xl md:text-3xl lg:text-4xl font-light text-[#231B15] tracking-tight max-w-3xl leading-snug px-2">
-            &ldquo;Trusted &amp; Regularly Commissioned at{" "}
+          {/* Core Service Statement: Available across all Bali */}
+          <h2 className="font-serif text-lg sm:text-2xl md:text-3xl lg:text-4xl font-light text-[#231B15] tracking-tight max-w-4xl leading-snug px-2">
+            &ldquo;Bespoke Private Bodywork &mdash;{" "}
             <span className="italic font-normal text-[#8B5A3C] underline decoration-[#DDD0BD] underline-offset-4 sm:underline-offset-8">
-              Tribe Hotel, Bali
+              We Travel Directly to You Anywhere in Bali
             </span>
             &rdquo;
           </h2>
 
-          <div className="pt-2 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2.5 sm:gap-8 text-[11px] sm:text-xs tracking-wider uppercase text-[#756A63] font-light">
+          <div className="pt-2 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2.5 sm:gap-6 lg:gap-8 text-[11px] sm:text-xs tracking-wider uppercase text-[#756A63] font-light">
             <span className="flex items-center space-x-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#8B5A3C] shrink-0" />
-              <span>Certified International Therapist</span>
+              <span>Seminyak, Canggu, Ubud, Uluwatu &amp; Beyond</span>
             </span>
             <span className="flex items-center space-x-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#8B5A3C] shrink-0" />
-              <span>10+ Years Dedicated Practice</span>
+              <span>Complete Massage Table &amp; Linens Provided</span>
+            </span>
+            <span className="flex items-center space-x-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#8B5A3C] shrink-0" />
+              <span>10+ Years Professional Experience</span>
             </span>
             <span className="flex items-center space-x-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#8B5A3C] shrink-0" />

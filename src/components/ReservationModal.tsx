@@ -60,7 +60,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
     }%0A• *Special Notes:* ${notes || "None"}%0A%0APlease let me know your availability. Thank you!`;
 
     // Direct WhatsApp URI
-    const whatsappUrl = `https://wa.me/6281239887766?text=${message}`;
+    const whatsappUrl = `https://wa.me/6283876667303?text=${message}`;
     window.open(whatsappUrl, "_blank");
     onClose();
   };
@@ -264,7 +264,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g. Villa Samuan, Seminyak or Tribe Hotel Kuta"
+                  placeholder="e.g. Villa in Canggu, Resort in Ubud, Uluwatu, or anywhere in Bali"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                   className="w-full bg-[#F5F0E8]/60 border border-[#DDD0BD] rounded-xl px-3.5 sm:px-4 py-2 sm:py-2.5 text-base sm:text-xs text-[#231B15] focus:outline-none focus:border-[#8B5A3C]"

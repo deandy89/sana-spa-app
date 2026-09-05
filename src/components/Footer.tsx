@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
 
         <div className="text-center md:text-right text-white/40 text-[9px] sm:text-[10px] tracking-wider">
           <p>&copy; {new Date().getFullYear()} Sana Bali Spa. All Rights Reserved.</p>
-          <p className="mt-0.5">Trusted &amp; Commissioned at Tribe Hotel, Bali.</p>
+          <p className="mt-0.5">Island-Wide In-Villa Spa Service across all areas of Bali.</p>
         </div>
       </div>
     </footer>

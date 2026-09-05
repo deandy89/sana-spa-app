@@ -15,10 +15,10 @@ export const TestimonialsSection: React.FC = () => {
     },
     {
       quote:
-        "After a week of intense surfing in Uluwatu, the Deep Tissue & Warm Basalt stone treatment was miraculous. The pressure was firm yet deeply relaxing. Highly recommended by Tribe Hotel concierge.",
+        "After a week of intense surfing in Uluwatu, the Deep Tissue & Warm Basalt stone treatment was miraculous. She arrived promptly at our villa with a full professional massage table. The pressure was firm yet deeply relaxing.",
       author: "Marcus & Liam",
       origin: "Sydney, Australia",
-      stay: "Tribe Hotel Bali Guests",
+      stay: "Private Villa Guests, Uluwatu",
     },
     {
       quote:
