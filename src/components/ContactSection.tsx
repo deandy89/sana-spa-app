@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { MessageCircle, Instagram, MapPin, Clock } from "lucide-react";
+import { MessageCircle, Instagram, MapPin, Clock, Mail } from "lucide-react";
 
 interface ContactSectionProps {
   onOpenReserve: () => void;
@@ -42,6 +42,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
             {/* Direct contact items */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 pt-2 sm:pt-4">
+              {/* WhatsApp */}
               <div className="flex items-start space-x-3.5 sm:space-x-4">
                 <div className="p-2.5 sm:p-3 rounded-full bg-white/5 border border-white/10 text-[#CDBAA1] shrink-0">
                   <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -64,6 +65,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
               </div>
 
+              {/* Email */}
+              <div className="flex items-start space-x-3.5 sm:space-x-4">
+                <div className="p-2.5 sm:p-3 rounded-full bg-white/5 border border-white/10 text-[#CDBAA1] shrink-0">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                </div>
+                <div>
+                  <h4 className="text-[10px] sm:text-xs uppercase tracking-widest font-sans text-white/50">
+                    Email Inquiries
+                  </h4>
+                  <a
+                    href="mailto:andinitiarahasanah@gmail.com"
+                    className="font-serif text-xs sm:text-sm md:text-base text-[#FAF8F5] hover:text-[#CDBAA1] transition-colors break-all"
+                  >
+                    andinitiarahasanah@gmail.com
+                  </a>
+                  <p className="text-[10px] sm:text-[11px] text-[#DDD0BD]/60 mt-0.5">
+                    Direct inquiries &amp; reservations
+                  </p>
+                </div>
+              </div>
+
+              {/* Instagram */}
               <div className="flex items-start space-x-3.5 sm:space-x-4">
                 <div className="p-2.5 sm:p-3 rounded-full bg-white/5 border border-white/10 text-[#CDBAA1] shrink-0">
                   <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -86,6 +109,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
               </div>
 
+              {/* Service Areas */}
               <div className="flex items-start space-x-3.5 sm:space-x-4">
                 <div className="p-2.5 sm:p-3 rounded-full bg-white/5 border border-white/10 text-[#CDBAA1] shrink-0">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -103,7 +127,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3.5 sm:space-x-4">
+              {/* Operating Hours */}
+              <div className="flex items-start space-x-3.5 sm:space-x-4 sm:col-span-2">
                 <div className="p-2.5 sm:p-3 rounded-full bg-white/5 border border-white/10 text-[#CDBAA1] shrink-0">
                   <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
@@ -112,10 +137,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     Operating Hours
                   </h4>
                   <p className="font-serif text-base sm:text-lg text-[#FAF8F5]">
-                    09:00 — 21:00 WITA
+                    09:00 — 21:00 WITA &bull; Monday to Sunday
                   </p>
                   <p className="text-[10px] sm:text-[11px] text-[#DDD0BD]/60 mt-0.5">
-                    Monday to Sunday
+                    Advance and same-day in-villa reservations welcomed
                   </p>
                 </div>
               </div>

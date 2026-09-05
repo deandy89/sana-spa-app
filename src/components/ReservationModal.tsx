@@ -120,7 +120,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
                 <label className="text-[11px] sm:text-xs font-sans tracking-wider uppercase font-semibold text-[#8B5A3C]">
                   1. Select Signature Therapy
                 </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                <div className="grid grid-cols-1 gap-2.5 sm:gap-3">
                   {TREATMENTS.map((t) => {
                     const isSelected = t.id === treatment;
                     return (
