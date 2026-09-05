@@ -13,9 +13,9 @@ export interface DurationPricing {
 }
 
 export const DURATION_PRICING: DurationPricing[] = [
-  { label: "1 Jam", duration: "60 Menit", price: "Rp 250.000", idr: "250K" },
-  { label: "90 Menit", duration: "90 Menit", price: "Rp 350.000", idr: "350K" },
-  { label: "2 Jam", duration: "120 Menit", price: "Rp 450.000", idr: "450K" },
+  { label: "60 Menit", duration: "1 Jam", price: "Rp 250.000", idr: "250K" },
+  { label: "90 Menit", duration: "1.5 Jam", price: "Rp 350.000", idr: "350K" },
+  { label: "120 Menit", duration: "2 Jam", price: "Rp 450.000", idr: "450K" },
 ];
 
 export interface Treatment {
@@ -37,9 +37,9 @@ export const TREATMENTS: Treatment[] = [
     description:
       "A deeply restorative ritual uniting traditional Balinese long flowing strokes, gentle skin-rolling, acupressure points, and soothing palm pressure. Performed using warm, 100% organic cold-pressed virgin coconut oil infused with natural Balinese frangipani and herbal essences to release accumulated muscular tension, soothe the nervous system, and awaken your body's natural harmony.",
     durations: [
-      "1 Jam (60 Menit) — Rp 250.000",
+      "60 Menit (1 Jam) — Rp 250.000",
       "90 Menit — Rp 350.000",
-      "2 Jam (120 Menit) — Rp 450.000",
+      "120 Menit (2 Jam) — Rp 450.000",
     ],
     price: "Rp 250K — 450K",
     image:

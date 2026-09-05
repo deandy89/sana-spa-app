@@ -22,22 +22,22 @@ interface ReservationModalProps {
 
 const DURATION_OPTIONS = [
   {
-    label: "1 Jam",
-    sub: "60 Menit",
+    label: "60 Menit",
+    sub: "1 Jam",
     price: "Rp 250.000",
-    value: "1 Jam (60 Menit) — Rp 250.000",
+    value: "60 Menit (1 Jam) — Rp 250.000",
   },
   {
     label: "90 Menit",
-    sub: "90 Menit",
+    sub: "1.5 Jam",
     price: "Rp 350.000",
     value: "90 Menit — Rp 350.000",
   },
   {
-    label: "2 Jam",
-    sub: "120 Menit",
+    label: "120 Menit",
+    sub: "2 Jam",
     price: "Rp 450.000",
-    value: "2 Jam (120 Menit) — Rp 450.000",
+    value: "120 Menit (2 Jam) — Rp 450.000",
   },
 ];
 
